@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+canvas {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#spinButton {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+#spinButton:hover {
+    background-color: #0056b3;
+}
+
+#toggleWinningsButton {
+    display: non; /* Make it visible when needed */
+    background-color: #28a745;
+    color: #fff;
+}
+
+#toggleWinningsButton:hover {
+    background-color: #1e7e34;
+}
