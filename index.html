@@ -1,18 +1,26 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roue de la Fortune</title>
-    <script>
-        window.location.href = 'popup.html';
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="sketch.js"></script>
+    <script src="popup.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button id="spinButton">Tourner la roue</button>
+    <button id="spinButton" onclick="handleSpinButtonClick()">Tourner la roue</button>
     <div id="result"></div>
+
+    <!-- Pop-up HTML déplacé ici -->
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Lancez la Roue de la Fortune!</h2>
+            <p>Appuyez sur le bouton ci-dessous pour lancer la roue et gagner des lots incroyables!</p>
+            <button onclick="redirectToRating()">Lancer la Roue</button>
+        </div>
+    </div>
 </body>
 </html>
