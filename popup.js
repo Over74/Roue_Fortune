@@ -1,5 +1,6 @@
+// popup.js
 document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(showPopup, 1000); // Afficher la pop-up après 1 seconde
+    // Initial code removed
 });
 
 function showPopup() {
@@ -10,7 +11,18 @@ function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
 
-function redirectToWheel() {
+function redirectToRating() {
     closePopup(); // Fermer la pop-up
-    document.getElementById('spinButton').scrollIntoView({ behavior: 'smooth' }); // Défilement vers la roue
+    window.location.href = 'rating.html'; // Rediriger vers la page de notation
+}
+
+function handleSpinButtonClick() {
+    if (localStorage.getItem('rated') === 'true') {
+        // Si l'utilisateur a déjà donné son avis, lancer la roue directement
+        startSpin();
+        localStorage.removeItem('rated'); // Réinitialiser le statut après le spin
+    } else {
+        // Sinon, montrer la popup
+        showPopup();
+    }
 }
