@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     display: flex;
     flex-direction: column;
@@ -41,14 +42,12 @@ button {
     background-color: #0056b3;
 }
 
-#toggleWinningsButton {
-    display: non; /* Make it visible when needed */
-    background-color: #28a745;
-    color: #fff;
-}
-
-#toggleWinningsButton:hover {
-    background-color: #1e7e34;
+.rating-popup {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Pop-up styles */
