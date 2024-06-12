@@ -1,3 +1,4 @@
+// sketch.js
 let angle = 0;
 let spinning = false;
 let spinSpeed = 0;
@@ -7,7 +8,6 @@ function setup() {
     createCanvas(600, 600);
     wheel = new Wheel(width / 2, height / 2, 250, wheelOptions);
     let spinButton = select('#spinButton');
-    spinButton.mousePressed(startSpin);
     resultDiv = select('#result');
 }
 
